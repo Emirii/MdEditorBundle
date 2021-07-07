@@ -39,6 +39,13 @@ Install the assets:
 php bin/console assets:install web
 ```
 
+Depending on how your app is set up, you might have to add this to your config as well:
+```
+twig:
+    form_themes:
+        - 'EmiriiMdEditorBundle:Form:fields.html.twig'
+```
+
 ### Step 3: Use the Bundle
 
 Controller or service with your form:

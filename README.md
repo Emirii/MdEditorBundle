@@ -34,6 +34,11 @@ return [
 ];
 ```
 
+Install the assets:
+```
+php bin/console assets:install web
+```
+
 ### Step 3: Use the Bundle
 
 Controller or service with your form:

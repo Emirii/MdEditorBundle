@@ -1,0 +1,5 @@
+services:
+    emirii_md_editor.form.type.markdown:
+        class: Emirii\MdBundle\Form\Type\MarkdownType
+        tags:
+            - { name: form.type, alias: markdown }

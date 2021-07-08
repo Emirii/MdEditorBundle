@@ -1,12 +1,5 @@
 <?php
 
-/*
- * Copyright (c) CityOf.com - All rights reserved.
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
- * Written by Emylee Schonhoeft <emylee@thecityof.net>
- */
-
 namespace Emirii\MdEditorBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;

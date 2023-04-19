@@ -43,7 +43,7 @@ Depending on how your app is set up, you might have to add this to your config a
 ```
 twig:
     form_themes:
-        - 'EmiriiMdEditorBundle:Form:fields.html.twig'
+        - '@EmiriiMdEditor/Form/fields.html.twig'
 ```
 
 ### Step 3: Use the Bundle
@@ -55,7 +55,7 @@ use Emirii\MdEditorBundle\Form\Type\MarkdownType;
 $formMapper->add('content', MarkdownType::class);
 ```
 
-Then in your templates you can use Twig's markdown parser or whatever other parser you'd like. I also like [KNP Markdown Bundle](https://github.com/KnpLabs/KnpMarkdownBundle).
+Then in your templates you can use Twig's markdown parser or whatever other parser you'd like. I also like [Twig Markdown Extra](https://github.com/twigphp/markdown-extra).
 ```
 {{ content|markdown_to_html }}
 ```

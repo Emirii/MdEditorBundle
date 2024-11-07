@@ -14,7 +14,7 @@
         <script type="text/javascript">
             var mdEditor;
             $(function() {
-                mdEditor = editormd("markdown", {
+                mdEditor = editormd("markdown-{{ form.vars.id }}", {
                     width: "100%",
                     height: 810,
                     syncScrolling: "single",
@@ -24,5 +24,5 @@
                 });
             });
         </script>
-        <div id="markdown"><textarea {{ block('widget_attributes') }}>{{ value }}</textarea></div>
+        <div id="markdown-{{ form.vars.id }}"><textarea {{ block('widget_attributes') }}>{{ value }}</textarea></div>
 {% endblock %}
